@@ -1,0 +1,914 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\pic18f47q43_ST7789.X.production.o
+cinit CODE 0 109B8 109B8 32 1
+idloc IDLOC 5 200000 200000 20 1
+text0 CODE 0 107FA 107FA 74 1
+text1 CODE 0 1086E 1086E 72 1
+text2 CODE 0 10762 10762 98 1
+text3 CODE 0 10408 10408 124 1
+text4 CODE 0 109EA 109EA 2A 1
+text5 CODE 0 10ABE 10ABE 12 1
+text6 CODE 0 10AF0 10AF0 C 1
+text7 CODE 0 10A5A 10A5A 1C 1
+text8 CODE 0 10980 10980 38 1
+text9 CODE 0 10000 10000 2DC 1
+text10 CODE 0 102DC 102DC 12C 1
+text11 CODE 0 10602 10602 BC 1
+text12 CODE 0 1093A 1093A 46 1
+text13 CODE 0 108E0 108E0 5A 1
+text14 CODE 0 10AE2 10AE2 E 1
+text15 CODE 0 10A38 10A38 22 1
+text16 CODE 0 10AD0 10AD0 12 1
+text17 CODE 0 10A92 10A92 1A 1
+text18 CODE 0 10A14 10A14 24 1
+text19 CODE 0 106BE 106BE A4 1
+text20 CODE 0 10A76 10A76 1C 1
+text21 CODE 0 1052C 1052C D6 1
+idataCOMRAM CODE 0 10AAC 10AAC 12 1
+cstackCOMRAM COMRAM 1 501 501 30 1
+dataCOMRAM COMRAM 1 531 531 12 1
+bssCOMRAM COMRAM 1 543 543 9 1
+mediumconst MEDIUMCONST 0 FAD6 FAD6 52A 1
+config CONFIG 4 300000 300000 A 1
+$C:\Users\wojte\AppData\Local\Temp\s7pk.o
+idloc IDLOC 5 200000 200000 20 1
+init CODE 0 1FFFC 1FFFC 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 A 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-25FF 1
+SFR 0-4FF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-FAD5 1
+CONST 10AFC-1FFFB 1
+STACK 560-25FF 1
+SMALLCONST 2600-FAD5 1
+SMALLCONST 10AFC-1FFFB 1
+CODE 4-FAD5 1
+CODE 10AFC-1FFFB 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BIGRAM 54C-25FF 1
+COMRAM 54C-55F 1
+CONFIG 30000A-300011 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 2600-FAD5 1
+MEDIUMCONST 12600-1FFFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\pic18f47q43_ST7789.X.production.o
+1052C text21 CODE >79:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+1052E text21 CODE >81:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+1053E text21 CODE >83:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+1055A text21 CODE >84:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+1057E text21 CODE >85:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+105A4 text21 CODE >86:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+105A8 text21 CODE >87:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+105CC text21 CODE >88:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+105FE text21 CODE >89:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10600 text21 CODE >93:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10A76 text20 CODE >58:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A76 text20 CODE >61:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A7C text20 CODE >63:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A80 text20 CODE >65:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A84 text20 CODE >67:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A88 text20 CODE >69:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A8C text20 CODE >71:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A90 text20 CODE >72:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+106BE text19 CODE >55:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106BE text19 CODE >60:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106C2 text19 CODE >61:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106C6 text19 CODE >62:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106CA text19 CODE >63:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106CE text19 CODE >64:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106D2 text19 CODE >69:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106D6 text19 CODE >70:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106DA text19 CODE >71:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106DE text19 CODE >72:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106E0 text19 CODE >73:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106E4 text19 CODE >78:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106EA text19 CODE >79:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106EE text19 CODE >80:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106F2 text19 CODE >81:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106F6 text19 CODE >82:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106FA text19 CODE >87:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+106FE text19 CODE >88:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10702 text19 CODE >89:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10706 text19 CODE >90:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1070A text19 CODE >91:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1070E text19 CODE >96:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10714 text19 CODE >97:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10718 text19 CODE >98:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1071C text19 CODE >99:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10720 text19 CODE >104:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10726 text19 CODE >105:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1072A text19 CODE >106:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1072E text19 CODE >107:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10732 text19 CODE >108:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10736 text19 CODE >113:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10738 text19 CODE >114:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1073A text19 CODE >115:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1073C text19 CODE >116:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1073E text19 CODE >117:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10742 text19 CODE >122:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10744 text19 CODE >123:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10746 text19 CODE >124:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10748 text19 CODE >125:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1074A text19 CODE >126:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1074E text19 CODE >135:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10754 text19 CODE >136:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10758 text19 CODE >137:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+1075C text19 CODE >138:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10760 text19 CODE >139:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+10A14 text18 CODE >74:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A14 text18 CODE >77:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A1A text18 CODE >79:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A1E text18 CODE >81:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A22 text18 CODE >83:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A26 text18 CODE >85:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A2A text18 CODE >87:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A2E text18 CODE >89:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A32 text18 CODE >91:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A36 text18 CODE >92:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A92 text17 CODE >64:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10A92 text17 CODE >67:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10A98 text17 CODE >69:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10A9C text17 CODE >71:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10AA0 text17 CODE >73:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10AA4 text17 CODE >75:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10AA8 text17 CODE >76:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10AAA text17 CODE >77:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10AD0 text16 CODE >50:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10AD0 text16 CODE >52:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10AD4 text16 CODE >53:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10AD8 text16 CODE >54:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10ADC text16 CODE >55:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10AE0 text16 CODE >56:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+10A38 text15 CODE >100:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10A3A text15 CODE >102:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10A40 text15 CODE >103:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10A46 text15 CODE >104:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10A54 text15 CODE >105:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10A58 text15 CODE >106:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+10AE2 text14 CODE >95:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10AE4 text14 CODE >96:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10AE6 text14 CODE >97:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10AEC text14 CODE >98:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10AEE text14 CODE >99:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108E0 text13 CODE >165:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108E2 text13 CODE >166:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108E6 text13 CODE >167:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108EA text13 CODE >169:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108F0 text13 CODE >170:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108F6 text13 CODE >171:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108FC text13 CODE >172:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10902 text13 CODE >173:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1090E text13 CODE >175:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10914 text13 CODE >176:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1091A text13 CODE >177:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10920 text13 CODE >178:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10926 text13 CODE >179:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10932 text13 CODE >181:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10938 text13 CODE >182:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1093A text12 CODE >223:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1093C text12 CODE >224:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10960 text12 CODE >226:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10972 text12 CODE >227:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10978 text12 CODE >228:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1097E text12 CODE >231:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10602 text11 CODE >267:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10604 text11 CODE >268:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10638 text11 CODE >269:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10640 text11 CODE >270:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10682 text11 CODE >271:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10688 text11 CODE >273:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1069A text11 CODE >274:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1069E text11 CODE >275:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+106A4 text11 CODE >276:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+106AA text11 CODE >274:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+106BC text11 CODE >280:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+102DC text10 CODE >292:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+102DE text10 CODE >293:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10322 text10 CODE >294:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1032A text10 CODE >296:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1036C text10 CODE >297:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10372 text10 CODE >298:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+103B4 text10 CODE >299:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+103BA text10 CODE >301:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+103CC text10 CODE >302:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+103DC text10 CODE >303:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+103E0 text10 CODE >304:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+103E6 text10 CODE >305:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+103EC text10 CODE >303:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10406 text10 CODE >309:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10000 text9 CODE >370:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10002 text9 CODE >372:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10038 text9 CODE >374:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1004A text9 CODE >375:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10052 text9 CODE >378:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10064 text9 CODE >379:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10070 text9 CODE >383:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10074 text9 CODE >384:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+100A8 text9 CODE >385:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+100AC text9 CODE >386:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+100BA text9 CODE >387:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+100CA text9 CODE >388:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+100E4 text9 CODE >390:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1010E text9 CODE >393:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10126 text9 CODE >394:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10136 text9 CODE >395:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10150 text9 CODE >397:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10176 text9 CODE >399:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1018C text9 CODE >400:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1019E text9 CODE >402:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+101B6 text9 CODE >403:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+101E2 text9 CODE >404:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10208 text9 CODE >407:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10210 text9 CODE >409:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1023E text9 CODE >410:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10242 text9 CODE >412:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1028E text9 CODE >414:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10292 text9 CODE >415:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1029A text9 CODE >416:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+102D6 text9 CODE >417:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+102DA text9 CODE >419:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10980 text8 CODE >427:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10980 text8 CODE >428:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10984 text8 CODE >429:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1099A text8 CODE >428:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+109B6 text8 CODE >430:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10A5A text7 CODE >317:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10A5A text7 CODE >318:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10A74 text7 CODE >319:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10AF0 text6 CODE >456:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10AF2 text6 CODE >457:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10AF6 text6 CODE >458:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10AFA text6 CODE >459:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10ABE text5 CODE >467:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10ABE text5 CODE >468:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10AC6 text5 CODE >469:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10ACE text5 CODE >470:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+109EA text4 CODE >437:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+109EC text4 CODE >438:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10A12 text4 CODE >439:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10408 text3 CODE >108:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10408 text3 CODE >112:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10424 text3 CODE >114:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10428 text3 CODE >116:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10444 text3 CODE >117:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10460 text3 CODE >118:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1046E text3 CODE >119:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10470 text3 CODE >120:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10474 text3 CODE >121:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10490 text3 CODE >120:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+104A2 text3 CODE >124:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+104B4 text3 CODE >125:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+104D0 text3 CODE >126:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+104EE text3 CODE >127:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10518 text3 CODE >114:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1052A text3 CODE >131:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10762 text2 CODE >190:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10764 text2 CODE >191:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10768 text2 CODE >193:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1076E text2 CODE >195:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10772 text2 CODE >197:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10776 text2 CODE >198:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1077A text2 CODE >199:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1077E text2 CODE >200:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10782 text2 CODE >202:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10786 text2 CODE >203:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1078A text2 CODE >204:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1078E text2 CODE >205:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10792 text2 CODE >207:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10796 text2 CODE >208:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1079A text2 CODE >209:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1079E text2 CODE >210:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+107A2 text2 CODE >212:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+107A6 text2 CODE >213:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+107AA text2 CODE >214:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+107AE text2 CODE >215:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+107B2 text2 CODE >216:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+107EC text2 CODE >218:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+107F2 text2 CODE >219:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+107F8 text2 CODE >221:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1086E text1 CODE >138:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1086E text1 CODE >140:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10870 text1 CODE >141:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+10888 text1 CODE >142:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+1088A text1 CODE >143:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108A2 text1 CODE >144:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108A4 text1 CODE >145:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108BC text1 CODE >147:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108C8 text1 CODE >149:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108CC text1 CODE >150:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108D0 text1 CODE >151:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108D4 text1 CODE >152:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108D8 text1 CODE >153:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+108DE text1 CODE >154:C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+107FA text0 CODE >8:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+107FA text0 CODE >11:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+107FE text0 CODE >18:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+10804 text0 CODE >19:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+10814 text0 CODE >24:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+10818 text0 CODE >26:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+1082A text0 CODE >27:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+10836 text0 CODE >28:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+1083C text0 CODE >29:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+10846 text0 CODE >30:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+1085A text0 CODE >31:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+10866 text0 CODE >33:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+10866 text0 CODE >41:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+109B8 cinit CODE >10070:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109B8 cinit CODE >10072:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109B8 cinit CODE >10075:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109B8 cinit CODE >10143:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109BA cinit CODE >10144:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109BC cinit CODE >10145:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109BE cinit CODE >10146:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109C0 cinit CODE >10147:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109C2 cinit CODE >10148:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109C4 cinit CODE >10149:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109C8 cinit CODE >10150:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109CC cinit CODE >10151:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109CC cinit CODE >10152:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109CE cinit CODE >10153:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109D2 cinit CODE >10154:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109D4 cinit CODE >10155:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109D6 cinit CODE >10156:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109D8 cinit CODE >10160:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109DC cinit CODE >10161:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109DE cinit CODE >10162:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109DE cinit CODE >10163:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109E0 cinit CODE >10164:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109E2 cinit CODE >10165:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109E4 cinit CODE >10171:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109E4 cinit CODE >10173:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+109E6 cinit CODE >10174:C:\Users\wojte\AppData\Local\Temp\s7pk.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_SPI1SCKPPS 26A 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1SDIPPS 26B 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_setTextColor 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lmediumconst FAD6 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_tft_init 108E0 0 CODE 0 text1 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hspace_0 20000 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hspace_1 54C 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hspace_4 60000A 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_displayInit 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_writeCommand 10AF0 0 CODE 0 text14 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\pic18f47q43_ST7789.X.production.o
+__mediumconst FAD6 0 MEDIUMCONST 0 mediumconst C:\Users\wojte\AppData\Local\Temp\s7pk.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\pic18f47q43_ST7789.X.production.o
+displayInit@numArgs 507 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_PMD_Initialize 10A14 0 CODE 0 text18 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\pic18f47q43_ST7789.X.production.o
+_LATA 4BE 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_LATB 4BF 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_LATC 4C0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_LATD 4C1 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_LATE 4C2 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_PMD0 60 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_PMD1 61 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_PMD3 63 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_PMD4 64 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_PMD5 65 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_PMD6 66 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_PMD7 67 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_PMD8 68 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_WPUA 401 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_WPUB 409 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_WPUC 411 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_WPUD 419 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_WPUE 421 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\wojte\AppData\Local\Temp\s7pk.o
+_font FAD7 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
+_main 107FA 0 CODE 0 text0 dist/default/production\pic18f47q43_ST7789.X.production.o
+_wrap 541 0 COMRAM 1 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+start 1FFFC 0 CODE 0 init C:\Users\wojte\AppData\Local\Temp\s7pk.o
+__end_of_setTextColor 10AD0 0 CODE 0 text5 dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_SPI1_Initialize 10AAC 0 CODE 0 text17 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_spi1_configuration FFDC 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+fillRect@hi 516 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+fillRect@lo 517 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+fillRect@px 514 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__accesstop 560 0 ABS 0 - C:\Users\wojte\AppData\Local\Temp\s7pk.o
+intlevel0 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\s7pk.o
+intlevel1 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\s7pk.o
+intlevel2 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\s7pk.o
+intlevel3 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\s7pk.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+fillScreen@color 519 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+setAddrWindow@h 505 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+setAddrWindow@w 504 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+setAddrWindow@x 507 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+setAddrWindow@y 503 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_PMD_Initialize 10A38 0 CODE 0 text18 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_fillScreen 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__pidataCOMRAM 10AAC 0 CODE 0 idataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1CON0bits 84 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1_Initialize 10A92 0 CODE 0 text17 dist/default/production\pic18f47q43_ST7789.X.production.o
+_ACTCON AC 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_spi1_configuration FFD7 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
+_ANSELA 400 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_ANSELB 408 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_ANSELC 410 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_ANSELD 418 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_ANSELE 420 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\wojte\AppData\Local\Temp\s7pk.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\wojte\AppData\Local\Temp\s7pk.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+display_putc@c 51F 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+display_putc@i 521 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+display_putc@j 520 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+display_puts@s 522 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_setTextSize 10A14 0 CODE 0 text4 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\pic18f47q43_ST7789.X.production.o
+fillRect@color 50B 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hmediumconst 10000 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_SPI1_ExchangeByte 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_INLVLA 404 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_INLVLB 40C 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_INLVLC 414 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_INLVLD 41C 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_INLVLE 424 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+setCursor@x 502 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+setCursor@y 501 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+displayInit@addr 503 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_PIN_MANAGER_Initialize 106BE 0 CODE 0 text19 dist/default/production\pic18f47q43_ST7789.X.production.o
+start_initialization 109B8 0 CODE 0 cinit dist/default/production\pic18f47q43_ST7789.X.production.o
+_ODCONA 402 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_ODCONB 40A 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_ODCONC 412 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_ODCOND 41A 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_ODCONE 422 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_OSCFRQ B1 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_TRISBbits 4C7 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_setRotation 107FA 0 CODE 0 text2 dist/default/production\pic18f47q43_ST7789.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_RB1I2C 289 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_RB1PPS 20A 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_RB2I2C 288 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_RB3PPS 20C 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_RC3I2C 287 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_RC4I2C 286 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_displayInit 10408 0 CODE 0 text3 dist/default/production\pic18f47q43_ST7789.X.production.o
+_setAddrWindow 108E0 0 CODE 0 text13 dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_SYSTEM_Initialize 10AE2 0 CODE 0 text16 dist/default/production\pic18f47q43_ST7789.X.production.o
+drawVLine@h 509 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+drawVLine@x 515 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+drawVLine@y 508 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+setTextColor@b 503 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+setTextColor@c 501 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_SPI1_Initialize 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hidloc 200020 0 IDLOC 5 idloc dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\pic18f47q43_ST7789.X.production.o
+display_putc@line 51E 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank15 0 0 ABS 0 bank15 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank16 0 0 ABS 0 bank16 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank17 0 0 ABS 0 bank17 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank18 0 0 ABS 0 bank18 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank19 0 0 ABS 0 bank19 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank20 0 0 ABS 0 bank20 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank21 0 0 ABS 0 bank21 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank22 0 0 ABS 0 bank22 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank23 0 0 ABS 0 bank23 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank24 0 0 ABS 0 bank24 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank25 0 0 ABS 0 bank25 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank26 0 0 ABS 0 bank26 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank27 0 0 ABS 0 bank27 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank28 0 0 ABS 0 bank28 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank29 0 0 ABS 0 bank29 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank30 0 0 ABS 0 bank30 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank31 0 0 ABS 0 bank31 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank32 0 0 ABS 0 bank32 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank33 0 0 ABS 0 bank33 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank34 0 0 ABS 0 bank34 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank35 0 0 ABS 0 bank35 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank36 0 0 ABS 0 bank36 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbank37 0 0 ABS 0 bank37 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\pic18f47q43_ST7789.X.production.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\wojte\AppData\Local\Temp\s7pk.o
+main@F16745 531 0 COMRAM 1 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hconfig 30000A 0 CONFIG 4 config dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\pic18f47q43_ST7789.X.production.o
+_display_putc 10000 0 CODE 0 text9 dist/default/production\pic18f47q43_ST7789.X.production.o
+_display_puts 10980 0 CODE 0 text8 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\pic18f47q43_ST7789.X.production.o
+_PORTAbits 4CE 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_PORTDbits 4D1 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hinit 20000 0 CODE 0 init dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\pic18f47q43_ST7789.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\pic18f47q43_ST7789.X.production.o
+__Linit 1FFFC 0 CODE 0 init dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_SPI1_ExchangeByte 10A5A 0 CODE 0 text15 dist/default/production\pic18f47q43_ST7789.X.production.o
+__width 54B 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_setTextSize 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\pic18f47q43_ST7789.X.production.o
+__S0 20000 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__S1 54C 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_cmd_240x240 FFDC 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1BAUD 89 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1CON0 84 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1CON1 85 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1CON2 86 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+setTextSize@s 503 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+fillRect@h 50A 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+fillRect@w 509 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+fillRect@x 518 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+fillRect@y 508 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+displayInit@numCommands 506 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\pic18f47q43_ST7789.X.production.o
+_SYSTEM_Initialize 10AD0 0 CODE 0 text16 dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_display_putc 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_display_puts 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_setAddrWindow 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+main@MyString 525 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hramtop 2600 0 RAM 0 ramtop dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\pic18f47q43_ST7789.X.production.o
+__activetblptr 3 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+displayInit@ms 508 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_setRotation 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_display_putc 102DC 0 CODE 0 text9 dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_display_puts 109B8 0 CODE 0 text8 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext10 102DC 0 CODE 0 text10 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext11 10602 0 CODE 0 text11 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext12 1093A 0 CODE 0 text12 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext13 108E0 0 CODE 0 text13 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext14 10AE2 0 CODE 0 text14 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext15 10A38 0 CODE 0 text15 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext16 10AD0 0 CODE 0 text16 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext17 10A92 0 CODE 0 text17 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext18 10A14 0 CODE 0 text18 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext19 106BE 0 CODE 0 text19 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext20 10A76 0 CODE 0 text20 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext21 1052C 0 CODE 0 text21 dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_PIN_MANAGER_Initialize 10762 0 CODE 0 text19 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank15 0 0 ABS 0 bank15 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank16 0 0 ABS 0 bank16 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank17 0 0 ABS 0 bank17 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank18 0 0 ABS 0 bank18 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank19 0 0 ABS 0 bank19 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank20 0 0 ABS 0 bank20 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank21 0 0 ABS 0 bank21 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank22 0 0 ABS 0 bank22 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank23 0 0 ABS 0 bank23 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank24 0 0 ABS 0 bank24 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank25 0 0 ABS 0 bank25 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank26 0 0 ABS 0 bank26 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank27 0 0 ABS 0 bank27 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank28 0 0 ABS 0 bank28 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank29 0 0 ABS 0 bank29 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank30 0 0 ABS 0 bank30 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank31 0 0 ABS 0 bank31 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank32 0 0 ABS 0 bank32 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank33 0 0 ABS 0 bank33 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank34 0 0 ABS 0 bank34 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank35 0 0 ABS 0 bank35 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank36 0 0 ABS 0 bank36 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbank37 0 0 ABS 0 bank37 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\pic18f47q43_ST7789.X.production.o
+_setTextSize$452 501 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_textbgcolor 53D 0 COMRAM 1 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_setAddrWindow 1093A 0 CODE 0 text13 dist/default/production\pic18f47q43_ST7789.X.production.o
+SPI1_ExchangeByte@data 501 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_drawPixel 10980 0 CODE 0 text12 dist/default/production\pic18f47q43_ST7789.X.production.o
+__rowstart 546 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_drawVLine 106BE 0 CODE 0 text11 dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_drawPixel 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_drawVLine 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1_ExchangeByte 10A38 0 CODE 0 text15 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\pic18f47q43_ST7789.X.production.o
+setRotation@madctl 506 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_SPI1_Open 10602 0 CODE 0 text21 dist/default/production\pic18f47q43_ST7789.X.production.o
+stackhi 25FF 0 ABS 0 - C:\Users\wojte\AppData\Local\Temp\s7pk.o
+stacklo 560 0 ABS 0 - C:\Users\wojte\AppData\Local\Temp\s7pk.o
+__size_of_SPI1_Open 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_OSCCON1 AD 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_OSCCON3 AF 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_OSCTUNE B0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\pic18f47q43_ST7789.X.production.o
+_drawPixel 1093A 0 CODE 0 text12 dist/default/production\pic18f47q43_ST7789.X.production.o
+__colstart 547 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_drawVLine 10602 0 CODE 0 text11 dist/default/production\pic18f47q43_ST7789.X.production.o
+__height 54A 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__pbssCOMRAM 543 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_setCursor 10AFC 0 CODE 0 text6 dist/default/production\pic18f47q43_ST7789.X.production.o
+_PIR3bits 4B1 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+SPI1_Open@spi1UniqueConfiguration 502 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_textsize 542 0 COMRAM 1 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_setCursor 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1TCNTL 82 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_fillScreen 10A5A 0 CODE 0 text7 dist/default/production\pic18f47q43_ST7789.X.production.o
+end_of_initialization 109E4 0 CODE 0 cinit dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1_Open 1052C 0 CODE 0 text21 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\pic18f47q43_ST7789.X.production.o
+drawVLine@hi 513 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+drawVLine@lo 514 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_displayInit 1052C 0 CODE 0 text3 dist/default/production\pic18f47q43_ST7789.X.production.o
+writeCommand@cmd 502 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lramtop 2600 0 RAM 0 ramtop dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\pic18f47q43_ST7789.X.production.o
+__pcinit 109B8 0 CODE 0 cinit dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_fillRect 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_setCursor 10AF0 0 CODE 0 text6 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext0 107FA 0 CODE 0 text0 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext1 1086E 0 CODE 0 text1 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext2 10762 0 CODE 0 text2 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext3 10408 0 CODE 0 text3 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext4 109EA 0 CODE 0 text4 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext5 10ABE 0 CODE 0 text5 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext6 10AF0 0 CODE 0 text6 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext7 10A5A 0 CODE 0 text7 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext8 10980 0 CODE 0 text8 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ptext9 10000 0 CODE 0 text9 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\pic18f47q43_ST7789.X.production.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\wojte\AppData\Local\Temp\s7pk.o
+_cursor_x 544 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_cursor_y 543 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\pic18f47q43_ST7789.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\pic18f47q43_ST7789.X.production.o
+_setTextSize 109EA 0 CODE 0 text4 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\pic18f47q43_ST7789.X.production.o
+drawPixel@x 50B 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+drawPixel@y 508 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+drawPixel@color 509 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_SLRCONA 403 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SLRCONB 40B 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SLRCONC 413 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SLRCOND 41B 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SLRCONE 423 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of__initialization 109E4 0 CODE 0 cinit dist/default/production\pic18f47q43_ST7789.X.production.o
+_rotation 545 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\pic18f47q43_ST7789.X.production.o
+__xstart 549 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__ystart 548 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_tft_init 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_fillScreen 10A76 0 CODE 0 text7 dist/default/production\pic18f47q43_ST7789.X.production.o
+_writeCommand 10AE2 0 CODE 0 text14 dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1CLK 8C 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1RXB 80 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_SPI1TXB 81 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+drawVLine@color 50A 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_textcolor 53F 0 COMRAM 1 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__pcstackCOMRAM 501 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__pmediumconst FAD6 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
+_fillRect 102DC 0 CODE 0 text10 dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_cmd_240x240 FFFF 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_font FFD7 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_main 1086E 0 CODE 0 text0 dist/default/production\pic18f47q43_ST7789.X.production.o
+_setTextColor 10ABE 0 CODE 0 text5 dist/default/production\pic18f47q43_ST7789.X.production.o
+_OSCEN B3 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_TRISA 4C6 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_TRISB 4C7 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_TRISC 4C8 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_TRISD 4C9 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+_TRISE 4CA 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_fillRect 10408 0 CODE 0 text10 dist/default/production\pic18f47q43_ST7789.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\pic18f47q43_ST7789.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+setRotation@m 505 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+_setRotation 10762 0 CODE 0 text2 dist/default/production\pic18f47q43_ST7789.X.production.o
+__end_of_OSCILLATOR_Initialize 10A92 0 CODE 0 text20 dist/default/production\pic18f47q43_ST7789.X.production.o
+__initialization 109B8 0 CODE 0 cinit dist/default/production\pic18f47q43_ST7789.X.production.o
+__size_of_writeCommand 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
+__pdataCOMRAM 531 0 COMRAM 1 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\pic18f47q43_ST7789.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\pic18f47q43_ST7789.X.production.o
+_tft_init 1086E 0 CODE 0 text1 dist/default/production\pic18f47q43_ST7789.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\pic18f47q43_ST7789.X.production.o
+_OSCILLATOR_Initialize 10A76 0 CODE 0 text20 dist/default/production\pic18f47q43_ST7789.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text9 0 10000 10000 AFC 1
+cstackCOMRAM 1 501 501 4B 1
+init 0 1FFFC 1FFFC 4 1
+reset_vec 0 0 0 4 1
+mediumconst 0 FAD6 FAD6 52A 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

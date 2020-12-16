@@ -1,0 +1,516 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47Q43 ]
+[d frameptr 1249 ]
+"79 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+[e E355 . `uc
+SPI1_DEFAULT 0
+]
+"18 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+[e E16613 . `uc
+SPI1_DEFAULT 0
+]
+"95 C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+[v _writeCommand writeCommand `(v  1 e 1 0 ]
+"108
+[v _displayInit displayInit `(v  1 e 1 0 ]
+"138
+[v _tft_init tft_init `(v  1 e 1 0 ]
+"165
+[v _setAddrWindow setAddrWindow `(v  1 e 1 0 ]
+"190
+[v _setRotation setRotation `(v  1 e 1 0 ]
+"223
+[v _drawPixel drawPixel `(v  1 e 1 0 ]
+"242
+[v _drawHLine drawHLine `(v  1 e 1 0 ]
+"267
+[v _drawVLine drawVLine `(v  1 e 1 0 ]
+"292
+[v _fillRect fillRect `(v  1 e 1 0 ]
+"317
+[v _fillScreen fillScreen `(v  1 e 1 0 ]
+"370
+[v _display_putc display_putc `(v  1 e 1 0 ]
+"427
+[v _display_puts display_puts `(v  1 e 1 0 ]
+"437
+[v _setTextSize setTextSize `(v  1 e 1 0 ]
+"456
+[v _setCursor setCursor `(v  1 e 1 0 ]
+"467
+[v _setTextColor setTextColor `(v  1 e 1 0 ]
+"613
+[v _display_drawCircleHelper display_drawCircleHelper `(v  1 e 1 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"8 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"50 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"58
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"74
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"79
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+"100
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+"108
+[v _SPI1_ExchangeBlock SPI1_ExchangeBlock `(v  1 e 1 0 ]
+"1281 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f47q43.h
+[v _PMD0 PMD0 `VEuc  1 e 1 @96 ]
+"1338
+[v _PMD1 PMD1 `VEuc  1 e 1 @97 ]
+"1400
+[v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
+"1451
+[v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
+"1507
+[v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
+"1558
+[v _PMD6 PMD6 `VEuc  1 e 1 @102 ]
+"1620
+[v _PMD7 PMD7 `VEuc  1 e 1 @103 ]
+"1682
+[v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
+"3339
+[v _SPI1RXB SPI1RXB `VEuc  1 e 1 @128 ]
+"3409
+[v _SPI1TXB SPI1TXB `VEuc  1 e 1 @129 ]
+"3486
+[v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @130 ]
+"3526
+[v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @132 ]
+[s S58 . 1 `uc 1 BMODE 1 0 :1:0 
+`uc 1 MST 1 0 :1:1 
+`uc 1 LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"3547
+[s S64 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+`uc 1 SPI1MST 1 0 :1:1 
+`uc 1 SPI1LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 SPI1SPIEN 1 0 :1:7 
+]
+[u S70 . 1 `S58 1 . 1 0 `S64 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES70  1 e 1 @132 ]
+"3592
+[v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @133 ]
+"3694
+[v _SPI1CON2 SPI1CON2 `VEuc  1 e 1 @134 ]
+"3894
+[v _SPI1BAUD SPI1BAUD `VEuc  1 e 1 @137 ]
+"4148
+[v _SPI1CLK SPI1CLK `VEuc  1 e 1 @140 ]
+"5141
+[v _ACTCON ACTCON `VEuc  1 e 1 @172 ]
+"5211
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5351
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @175 ]
+"5391
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @176 ]
+"5449
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"5651
+[v _OSCEN OSCEN `VEuc  1 e 1 @179 ]
+"9149
+[v _RB1PPS RB1PPS `VEuc  1 e 1 @522 ]
+"9261
+[v _RB3PPS RB3PPS `VEuc  1 e 1 @524 ]
+"13803
+[v _SPI1SCKPPS SPI1SCKPPS `VEuc  1 e 1 @618 ]
+"13869
+[v _SPI1SDIPPS SPI1SDIPPS `VEuc  1 e 1 @619 ]
+"15027
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @646 ]
+"15159
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @647 ]
+"15291
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @648 ]
+"15423
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @649 ]
+"38534
+[v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
+"38596
+[v _WPUA WPUA `VEuc  1 e 1 @1025 ]
+"38658
+[v _ODCONA ODCONA `VEuc  1 e 1 @1026 ]
+"38720
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @1027 ]
+"38782
+[v _INLVLA INLVLA `VEuc  1 e 1 @1028 ]
+"39030
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"39092
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"39154
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"39216
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"39278
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"39526
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"39588
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"39650
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"39712
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"39774
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+"40022
+[v _ANSELD ANSELD `VEuc  1 e 1 @1048 ]
+"40084
+[v _WPUD WPUD `VEuc  1 e 1 @1049 ]
+"40146
+[v _ODCOND ODCOND `VEuc  1 e 1 @1050 ]
+"40208
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @1051 ]
+"40270
+[v _INLVLD INLVLD `VEuc  1 e 1 @1052 ]
+"40332
+[v _ANSELE ANSELE `VEuc  1 e 1 @1056 ]
+"40364
+[v _WPUE WPUE `VEuc  1 e 1 @1057 ]
+"40402
+[v _ODCONE ODCONE `VEuc  1 e 1 @1058 ]
+"40434
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @1059 ]
+"40466
+[v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
+[s S88 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+`uc 1 SPI1TXIF 1 0 :1:1 
+`uc 1 SPI1IF 1 0 :1:2 
+`uc 1 TMR2IF 1 0 :1:3 
+`uc 1 TMR1IF 1 0 :1:4 
+`uc 1 TMR1GIF 1 0 :1:5 
+`uc 1 CCP1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"45922
+[u S97 . 1 `S88 1 . 1 0 ]
+"45922
+"45922
+[v _PIR3bits PIR3bits `VES97  1 e 1 @1201 ]
+"46620
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
+"46682
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+"46744
+[v _LATC LATC `VEuc  1 e 1 @1216 ]
+"46806
+[v _LATD LATD `VEuc  1 e 1 @1217 ]
+"46868
+[v _LATE LATE `VEuc  1 e 1 @1218 ]
+"46900
+[v _TRISA TRISA `VEuc  1 e 1 @1222 ]
+"46962
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+[s S35 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"46979
+[u S44 . 1 `S35 1 . 1 0 ]
+"46979
+"46979
+[v _TRISBbits TRISBbits `VES44  1 e 1 @1223 ]
+"47024
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+"47086
+[v _TRISD TRISD `VEuc  1 e 1 @1225 ]
+"47148
+[v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+[s S287 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"47197
+[u S296 . 1 `S287 1 . 1 0 ]
+"47197
+"47197
+[v _PORTAbits PORTAbits `VES296  1 e 1 @1230 ]
+[s S311 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"47383
+[u S320 . 1 `S311 1 . 1 0 ]
+"47383
+"47383
+[v _PORTDbits PORTDbits `VES320  1 e 1 @1233 ]
+"5 C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/fonts.c
+[v _font font `C[256][5]uc  1 e 1280 0 ]
+"18 C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+[v __width _width `uc  1 e 1 0 ]
+"19
+[v __height _height `uc  1 e 1 0 ]
+"20
+[v __xstart _xstart `uc  1 e 1 0 ]
+"21
+[v __ystart _ystart `uc  1 e 1 0 ]
+"22
+[v __colstart _colstart `uc  1 e 1 0 ]
+"23
+[v __rowstart _rowstart `uc  1 e 1 0 ]
+"24
+[v _rotation rotation `uc  1 e 1 0 ]
+"27
+[v _cursor_x cursor_x `uc  1 e 1 0 ]
+"28
+[v _cursor_y cursor_y `uc  1 e 1 0 ]
+"30
+[v _textcolor textcolor `us  1 e 2 0 ]
+"31
+[v _textbgcolor textbgcolor `us  1 e 2 0 ]
+"32
+[v _textsize textsize `uc  1 e 1 0 ]
+"33
+[v _wrap wrap `a  1 e 1 0 ]
+"47
+[v _cmd_240x240 cmd_240x240 `C[35]uc  1 e 35 0 ]
+[s S24 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
+"60 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+[v _spi1_configuration spi1_configuration `C[1]S24  1 s 5 spi1_configuration ]
+"8 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"26
+[v main@MyString MyString `[12]uc  1 a 12 36 ]
+"24
+[v main@F16745 F16745 `[12]uc  1 s 12 F16745 ]
+"42
+} 0
+"138 C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
+[v _tft_init tft_init `(v  1 e 1 0 ]
+{
+"154
+} 0
+"190
+[v _setRotation setRotation `(v  1 e 1 0 ]
+{
+[v setRotation@m m `uc  1 a 1 wreg ]
+"191
+[v setRotation@madctl madctl `uc  1 a 1 5 ]
+"190
+[v setRotation@m m `uc  1 a 1 wreg ]
+[v setRotation@m m `uc  1 a 1 4 ]
+"221
+} 0
+"108
+[v _displayInit displayInit `(v  1 e 1 0 ]
+{
+"110
+[v displayInit@ms ms `us  1 a 2 7 ]
+"109
+[v displayInit@numArgs numArgs `uc  1 a 1 6 ]
+[v displayInit@numCommands numCommands `uc  1 a 1 5 ]
+"108
+[v displayInit@addr addr `*.32Cuc  1 p 2 2 ]
+"131
+} 0
+"437
+[v _setTextSize setTextSize `(v  1 e 1 0 ]
+{
+[v setTextSize@s s `uc  1 a 1 wreg ]
+[v setTextSize@s s `uc  1 a 1 wreg ]
+[v setTextSize@s s `uc  1 a 1 2 ]
+"439
+} 0
+"467
+[v _setTextColor setTextColor `(v  1 e 1 0 ]
+{
+[v setTextColor@c c `us  1 p 2 0 ]
+[v setTextColor@b b `us  1 p 2 2 ]
+"470
+} 0
+"456
+[v _setCursor setCursor `(v  1 e 1 0 ]
+{
+[v setCursor@x x `uc  1 a 1 wreg ]
+[v setCursor@x x `uc  1 a 1 wreg ]
+[v setCursor@y y `uc  1 p 1 0 ]
+[v setCursor@x x `uc  1 a 1 1 ]
+"459
+} 0
+"317
+[v _fillScreen fillScreen `(v  1 e 1 0 ]
+{
+[v fillScreen@color color `us  1 p 2 24 ]
+"319
+} 0
+"427
+[v _display_puts display_puts `(v  1 e 1 0 ]
+{
+[v display_puts@s s `*.39uc  1 p 2 33 ]
+"430
+} 0
+"370
+[v _display_putc display_putc `(v  1 e 1 0 ]
+{
+[v display_putc@c c `uc  1 a 1 wreg ]
+"384
+[v display_putc@line line `uc  1 a 1 29 ]
+"371
+[v display_putc@i i `uc  1 a 1 32 ]
+[v display_putc@j j `uc  1 a 1 31 ]
+"370
+[v display_putc@c c `uc  1 a 1 wreg ]
+"372
+[v display_putc@c c `uc  1 a 1 30 ]
+"419
+} 0
+"292
+[v _fillRect fillRect `(v  1 e 1 0 ]
+{
+[v fillRect@x x `uc  1 a 1 wreg ]
+"295
+[v fillRect@px px `us  1 a 2 19 ]
+"294
+[v fillRect@lo lo `uc  1 a 1 22 ]
+[v fillRect@hi hi `uc  1 a 1 21 ]
+"292
+[v fillRect@x x `uc  1 a 1 wreg ]
+[v fillRect@y y `uc  1 p 1 7 ]
+[v fillRect@w w `uc  1 p 1 8 ]
+[v fillRect@h h `uc  1 p 1 9 ]
+[v fillRect@color color `us  1 p 2 10 ]
+[v fillRect@x x `uc  1 a 1 23 ]
+"309
+} 0
+"267
+[v _drawVLine drawVLine `(v  1 e 1 0 ]
+{
+[v drawVLine@x x `uc  1 a 1 wreg ]
+"269
+[v drawVLine@lo lo `uc  1 a 1 19 ]
+[v drawVLine@hi hi `uc  1 a 1 18 ]
+"267
+[v drawVLine@x x `uc  1 a 1 wreg ]
+[v drawVLine@y y `uc  1 p 1 7 ]
+[v drawVLine@h h `uc  1 p 1 8 ]
+[v drawVLine@color color `us  1 p 2 9 ]
+[v drawVLine@x x `uc  1 a 1 20 ]
+"280
+} 0
+"223
+[v _drawPixel drawPixel `(v  1 e 1 0 ]
+{
+[v drawPixel@x x `uc  1 a 1 wreg ]
+[v drawPixel@x x `uc  1 a 1 wreg ]
+[v drawPixel@y y `uc  1 p 1 7 ]
+[v drawPixel@color color `us  1 p 2 8 ]
+[v drawPixel@x x `uc  1 a 1 10 ]
+"231
+} 0
+"165
+[v _setAddrWindow setAddrWindow `(v  1 e 1 0 ]
+{
+[v setAddrWindow@x x `uc  1 a 1 wreg ]
+[v setAddrWindow@x x `uc  1 a 1 wreg ]
+[v setAddrWindow@y y `uc  1 p 1 2 ]
+[v setAddrWindow@w w `uc  1 p 1 3 ]
+[v setAddrWindow@h h `uc  1 p 1 4 ]
+[v setAddrWindow@x x `uc  1 a 1 6 ]
+"182
+} 0
+"95
+[v _writeCommand writeCommand `(v  1 e 1 0 ]
+{
+[v writeCommand@cmd cmd `uc  1 a 1 wreg ]
+[v writeCommand@cmd cmd `uc  1 a 1 wreg ]
+[v writeCommand@cmd cmd `uc  1 a 1 1 ]
+"99
+} 0
+"100 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+"102
+[v SPI1_ExchangeByte@data data `uc  1 a 1 0 ]
+"106
+} 0
+"50 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"64 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"74 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"55 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"139
+} 0
+"58 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"79 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+"81
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 1 ]
+"93
+} 0
