@@ -35,6 +35,7 @@ ___sp 0 0 STACK 2
 _font FAD7 0 MEDIUMCONST 0
 start 1FFFC 0 CODE 0
 __size_of_setRotation 0 0 ABS 0
+_setTextSize$440 501 0 COMRAM 1
 _TRISA 4C6 0 ABS 0
 _TRISB 4C7 0 ABS 0
 _TRISC 4C8 0 ABS 0
@@ -138,6 +139,7 @@ __HnvFARRAM 0 0 FARRAM 0
 __LnvFARRAM 0 0 FARRAM 0
 __end_of_setAddrWindow 1093A 0 CODE 0
 __end_of_display_putc 102DC 0 CODE 0
+main@F16751 531 0 COMRAM 1
 __end_of_display_puts 109B8 0 CODE 0
 _SPI1_Open 1052C 0 CODE 0
 __end_of_font FFD7 0 MEDIUMCONST 0
@@ -162,7 +164,6 @@ __end_of_main 1086E 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
-main@F16745 531 0 COMRAM 1
 __end_of_fillRect 10408 0 CODE 0
 end_of_initialization 109E4 0 CODE 0
 drawPixel@color 509 0 COMRAM 1
@@ -430,7 +431,6 @@ __Hreset_vec 4 0 CODE 0
 __Lreset_vec 0 0 CODE 0
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0
 __end_of_tft_init 108E0 0 CODE 0
-_setTextSize$452 501 0 COMRAM 1
 __accesstop 560 0 ABS 0
 __size_of_setTextColor 0 0 ABS 0
 intlevel0 0 0 CODE 0
@@ -468,7 +468,7 @@ text9 10000 10AFB CODE 10000 0
 %locals
 dist/default/production\pic18f47q43_ST7789.X.production.o
 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f47q43.h
-C:\Users\wojte\AppData\Local\Temp\s7pk.s
+C:\Users\wojte\AppData\Local\Temp\savk.s
 10070 109B8 0 CODE 0
 10072 109B8 0 CODE 0
 10075 109B8 0 CODE 0
@@ -496,19 +496,19 @@ C:\Users\wojte\AppData\Local\Temp\s7pk.s
 10173 109E4 0 CODE 0
 10174 109E6 0 CODE 0
 main.c
+5 107FA 0 CODE 0
 8 107FA 0 CODE 0
-11 107FA 0 CODE 0
-18 107FE 0 CODE 0
-19 10804 0 CODE 0
-24 10814 0 CODE 0
-26 10818 0 CODE 0
-27 1082A 0 CODE 0
-28 10836 0 CODE 0
-29 1083C 0 CODE 0
-30 10846 0 CODE 0
-31 1085A 0 CODE 0
-33 10866 0 CODE 0
-41 10866 0 CODE 0
+15 107FE 0 CODE 0
+16 10804 0 CODE 0
+21 10814 0 CODE 0
+23 10818 0 CODE 0
+24 1082A 0 CODE 0
+25 10836 0 CODE 0
+26 1083C 0 CODE 0
+27 10846 0 CODE 0
+28 1085A 0 CODE 0
+30 10866 0 CODE 0
+38 10866 0 CODE 0
 C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
 138 1086E 0 CODE 0
 140 1086E 0 CODE 0

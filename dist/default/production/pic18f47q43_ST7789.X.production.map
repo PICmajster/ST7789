@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\pic18f47q43_ST7789.X.production.sym \
   --cmf=dist/default/production\pic18f47q43_ST7789.X.production.cmf -z \
-  -Q18F47Q43 -oC:\Users\wojte\AppData\Local\Temp\s7pk.2 \
+  -Q18F47Q43 -oC:\Users\wojte\AppData\Local\Temp\savk.2 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/pic18f47q43_ST7789.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0560h-025FFh -pstack=STACK \
@@ -32,7 +32,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\wojte\AppData\Local\Temp\s7pk.o \
+  C:\Users\wojte\AppData\Local\Temp\savk.o \
   dist/default/production\pic18f47q43_ST7789.X.production.o 
 
 Object code version is 3.11
@@ -42,7 +42,7 @@ Machine type is 18F47Q43
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\wojte\AppData\Local\Temp\s7pk.o
+C:\Users\wojte\AppData\Local\Temp\savk.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 init                              1FFFC    1FFFC        4     FFFE       0
@@ -674,7 +674,7 @@ _setCursor                        text6        010AF0
 _setRotation                      text2        010762
 _setTextColor                     text5        010ABE
 _setTextSize                      text4        0109EA
-_setTextSize$452                  cstackCOMRAM 000501
+_setTextSize$440                  cstackCOMRAM 000501
 _spi1_configuration               mediumconst  00FFD7
 _textbgcolor                      dataCOMRAM   00053D
 _textcolor                        dataCOMRAM   00053F
@@ -714,7 +714,7 @@ intlevel0                         text         000000
 intlevel1                         text         000000
 intlevel2                         text         000000
 intlevel3                         text         000000
-main@F16745                       dataCOMRAM   000531
+main@F16751                       dataCOMRAM   000531
 main@MyString                     cstackCOMRAM 000525
 setAddrWindow@h                   cstackCOMRAM 000505
 setAddrWindow@w                   cstackCOMRAM 000504
@@ -738,7 +738,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 8 in file "main.c"
+		line 5 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1135,6 +1135,7 @@ Total ram usage:       14 bytes
 		_display_putc
 		_display_customChar
 		_display_drawRect
+		_display_fillCircleHelper
 		_display_drawRoundRect
  This function uses a non-reentrant model
 

@@ -28185,14 +28185,12 @@ uint8_t getCursorY(void);
 uint8_t getRotation();
 uint16_t display_color565(uint8_t red, uint8_t green, uint8_t blue);
 void display_drawRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint16_t color);
-void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t cornername, uint16_t delta, uint16_t color);
+void display_drawCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t cornername, uint16_t color);
+void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners, uint8_t delta, uint16_t color);
 void display_drawRoundRect(uint8_t x0, uint8_t y0, uint8_t w, uint8_t h, uint8_t radius, uint16_t color);
 void display_fillRoundRect(uint8_t x0, uint8_t y0, uint8_t w, uint8_t h, uint8_t radius, uint16_t color);
 void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data);
 # 3 "main.c" 2
-
-
-
 
 
 void main(void)

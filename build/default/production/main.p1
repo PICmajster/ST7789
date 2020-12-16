@@ -3,8 +3,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "70 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 70: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"18 main.c
-[; ;main.c: 18:      SPI1_Open(SPI1_DEFAULT);
+"15 main.c
+[; ;main.c: 15:      SPI1_Open(SPI1_DEFAULT);
 [c E16613 0 .. ]
 [n E16613 . SPI1_DEFAULT  ]
 "64 ./mcc_generated_files/spi1.h
@@ -2538,31 +2538,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f47q43.h: 48744: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"8 main.c
-[; ;main.c: 8: void main(void)
+"5 main.c
+[; ;main.c: 5: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"9
-[; ;main.c: 9: {
+"6
+[; ;main.c: 6: {
 {
 [e :U _main ]
 [f ]
-"11
-[; ;main.c: 11:     SYSTEM_Initialize();
+"8
+[; ;main.c: 8:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"18
-[; ;main.c: 18:      SPI1_Open(SPI1_DEFAULT);
+"15
+[; ;main.c: 15:      SPI1_Open(SPI1_DEFAULT);
 [e ( _SPI1_Open (1 . `E16613 0 ]
-"19
-[; ;main.c: 19:      _delay((unsigned long)((5)*(64000000/4000.0)));
+"16
+[; ;main.c: 16:      _delay((unsigned long)((5)*(64000000/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"24
-[; ;main.c: 24:     tft_init();
+"21
+[; ;main.c: 21:     tft_init();
 [e ( _tft_init ..  ]
-[v F16745 `uc ~T0 @X0 -> 12 `i s ]
-[i F16745
+[v F16751 `uc ~T0 @X0 -> 12 `i s ]
+[i F16751
 :U ..
-"26
-[; ;main.c: 26:     uint8_t MyString[] = {"Ala ma Kota"};
+"23
+[; ;main.c: 23:     uint8_t MyString[] = {"Ala ma Kota"};
 -> 65 `c
 -> 108 `c
 -> 97 `c
@@ -2578,35 +2578,35 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _MyString `uc ~T0 @X0 -> 12 `i a ]
-[e = _MyString F16745 ]
-"27
-[; ;main.c: 27:     fillScreen(0x07E0);
+[e = _MyString F16751 ]
+"24
+[; ;main.c: 24:     fillScreen(0x07E0);
 [e ( _fillScreen (1 -> -> 2016 `i `us ]
-"28
-[; ;main.c: 28:     setTextSize(3);
+"25
+[; ;main.c: 25:     setTextSize(3);
 [e ( _setTextSize (1 -> -> 3 `i `uc ]
-"29
-[; ;main.c: 29:     setCursor(20, 50);
+"26
+[; ;main.c: 26:     setCursor(20, 50);
 [e ( _setCursor (2 , -> -> 20 `i `uc -> -> 50 `i `uc ]
-"30
-[; ;main.c: 30:     setTextColor(0x001F, 0x07E0);
+"27
+[; ;main.c: 27:     setTextColor(0x001F, 0x07E0);
 [e ( _setTextColor (2 , -> -> 31 `i `us -> -> 2016 `i `us ]
-"31
-[; ;main.c: 31:     display_puts(MyString);
+"28
+[; ;main.c: 28:     display_puts(MyString);
 [e ( _display_puts (1 &U _MyString ]
-"33
-[; ;main.c: 33:     while (1)
+"30
+[; ;main.c: 30:     while (1)
 [e :U 2318 ]
-"34
-[; ;main.c: 34:     {
+"31
+[; ;main.c: 31:     {
 {
-"41
-[; ;main.c: 41:     }
+"38
+[; ;main.c: 38:     }
 }
 [e :U 2317 ]
 [e $U 2318  ]
 [e :U 2319 ]
-"42
-[; ;main.c: 42: }
+"39
+[; ;main.c: 39: }
 [e :UE 2316 ]
 }

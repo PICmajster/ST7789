@@ -7,7 +7,7 @@
 [e E355 . `uc
 SPI1_DEFAULT 0
 ]
-"18 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+"15 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
 [e E16613 . `uc
 SPI1_DEFAULT 0
 ]
@@ -43,6 +43,8 @@ SPI1_DEFAULT 0
 [v _setTextColor setTextColor `(v  1 e 1 0 ]
 "613
 [v _display_drawCircleHelper display_drawCircleHelper `(v  1 e 1 0 ]
+"658
+[v _display_fillCircleHelper display_fillCircleHelper `(v  1 e 1 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fleq.c
@@ -69,7 +71,7 @@ SPI1_DEFAULT 0
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"8 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+"5 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "50 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -260,7 +262,7 @@ SPI1_DEFAULT 0
 [v _TRISD TRISD `VEuc  1 e 1 @1225 ]
 "47148
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S287 . 1 `uc 1 RA0 1 0 :1:0 
+[s S285 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -270,11 +272,11 @@ SPI1_DEFAULT 0
 `uc 1 RA7 1 0 :1:7 
 ]
 "47197
-[u S296 . 1 `S287 1 . 1 0 ]
+[u S294 . 1 `S285 1 . 1 0 ]
 "47197
 "47197
-[v _PORTAbits PORTAbits `VES296  1 e 1 @1230 ]
-[s S311 . 1 `uc 1 RD0 1 0 :1:0 
+[v _PORTAbits PORTAbits `VES294  1 e 1 @1230 ]
+[s S309 . 1 `uc 1 RD0 1 0 :1:0 
 `uc 1 RD1 1 0 :1:1 
 `uc 1 RD2 1 0 :1:2 
 `uc 1 RD3 1 0 :1:3 
@@ -284,10 +286,10 @@ SPI1_DEFAULT 0
 `uc 1 RD7 1 0 :1:7 
 ]
 "47383
-[u S320 . 1 `S311 1 . 1 0 ]
+[u S318 . 1 `S309 1 . 1 0 ]
 "47383
 "47383
-[v _PORTDbits PORTDbits `VES320  1 e 1 @1233 ]
+[v _PORTDbits PORTDbits `VES318  1 e 1 @1233 ]
 "5 C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/fonts.c
 [v _font font `C[256][5]uc  1 e 1280 0 ]
 "18 C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
@@ -321,14 +323,14 @@ SPI1_DEFAULT 0
 [s S24 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
 "60 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\mcc_generated_files/spi1.c
 [v _spi1_configuration spi1_configuration `C[1]S24  1 s 5 spi1_configuration ]
-"8 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
+"5 C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"26
+"23
 [v main@MyString MyString `[12]uc  1 a 12 36 ]
-"24
-[v main@F16745 F16745 `[12]uc  1 s 12 F16745 ]
-"42
+"21
+[v main@F16751 F16751 `[12]uc  1 s 12 F16751 ]
+"39
 } 0
 "138 C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
 [v _tft_init tft_init `(v  1 e 1 0 ]

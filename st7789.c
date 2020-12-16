@@ -645,6 +645,50 @@ void display_drawCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t cornern
     }
 }
 
+/*!
+    @brief  Quarter-circle drawer with fill, used for circles and roundrects
+    @param  x0       Center-point x coordinate
+    @param  y0       Center-point y coordinate
+    @param  r        Radius of circle
+    @param  corners  Mask bits indicating which quarters we're doing
+    @param  delta    Offset from center-point, used for round-rects
+    @param  color    16-bit 5-6-5 Color to fill with
+*/
+/**************************************************************************/
+void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners, uint8_t delta, uint16_t color) {
+    int16_t f     = 1 - r;
+    int16_t ddF_x = 1;
+    int16_t ddF_y = -2 * r;
+    uint8_t x     = 0;
+    uint8_t y     = r;
+    uint8_t px    = x;
+    uint8_t py    = y;
+
+    delta++; // Avoid some +1's in the loop
+
+    while(x < y) {
+        if (f >= 0) {
+            y--;
+            ddF_y += 2;
+            f     += ddF_y;
+        }
+        x++;
+        ddF_x += 2;
+        f     += ddF_x;
+        // These checks avoid double-drawing certain lines, important
+        // for the SSD1306 library which has an INVERT drawing mode.
+        if(x < (y + 1)) {
+            if(corners & 1) drawVLine(x0+x, y0-y, 2*y+delta, color);
+            if(corners & 2) drawVLine(x0-x, y0-y, 2*y+delta, color);
+        }
+        if(y != py) {
+            if(corners & 1) drawVLine(x0+py, y0-px, 2*px+delta, color);
+            if(corners & 2) drawVLine(x0-py, y0-px, 2*px+delta, color);
+            py = y;
+        }
+        px = x;
+    }
+}
 
 /*!
    @brief   Draw a rounded rectangle with no fill color

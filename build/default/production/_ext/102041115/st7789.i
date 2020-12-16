@@ -28189,7 +28189,8 @@ uint8_t getCursorY(void);
 uint8_t getRotation();
 uint16_t display_color565(uint8_t red, uint8_t green, uint8_t blue);
 void display_drawRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint16_t color);
-void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t cornername, uint16_t delta, uint16_t color);
+void display_drawCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t cornername, uint16_t color);
+void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners, uint8_t delta, uint16_t color);
 void display_drawRoundRect(uint8_t x0, uint8_t y0, uint8_t w, uint8_t h, uint8_t radius, uint16_t color);
 void display_fillRoundRect(uint8_t x0, uint8_t y0, uint8_t w, uint8_t h, uint8_t radius, uint16_t color);
 void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data);
@@ -28697,7 +28698,42 @@ void display_drawCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t cornern
         }
     }
 }
-# 659 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
+# 658 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
+void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners, uint8_t delta, uint16_t color) {
+    int16_t f = 1 - r;
+    int16_t ddF_x = 1;
+    int16_t ddF_y = -2 * r;
+    uint8_t x = 0;
+    uint8_t y = r;
+    uint8_t px = x;
+    uint8_t py = y;
+
+    delta++;
+
+    while(x < y) {
+        if (f >= 0) {
+            y--;
+            ddF_y += 2;
+            f += ddF_y;
+        }
+        x++;
+        ddF_x += 2;
+        f += ddF_x;
+
+
+        if(x < (y + 1)) {
+            if(corners & 1) drawVLine(x0+x, y0-y, 2*y+delta, color);
+            if(corners & 2) drawVLine(x0-x, y0-y, 2*y+delta, color);
+        }
+        if(y != py) {
+            if(corners & 1) drawVLine(x0+py, y0-px, 2*px+delta, color);
+            if(corners & 2) drawVLine(x0-py, y0-px, 2*px+delta, color);
+            py = y;
+        }
+        px = x;
+    }
+}
+# 703 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
 void display_drawRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r, uint16_t color) {
     uint8_t max_radius = ((w < h) ? w : h) / 2;
     if(r > max_radius) r = max_radius;
@@ -28712,7 +28748,7 @@ void display_drawRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r
     display_drawCircleHelper(x+w-r-1, y+h-r-1, r, 4, color);
     display_drawCircleHelper(x+r , y+h-r-1, r, 8, color);
 }
-# 684 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
+# 728 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
 void display_fillRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r, uint16_t color) {
     uint8_t max_radius = ((w < h) ? w : h) / 2;
     if(r > max_radius) r = max_radius;
@@ -28722,7 +28758,7 @@ void display_fillRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r
 
     display_fillCircleHelper(x+r , y+r, r, 2, h-2*r-1, color);
 }
-# 701 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
+# 745 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
 void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data)
 {
  if ((x >= _width) || (y >= _height))
