@@ -28194,6 +28194,9 @@ void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners
 void display_drawRoundRect(uint8_t x0, uint8_t y0, uint8_t w, uint8_t h, uint8_t radius, uint16_t color);
 void display_fillRoundRect(uint8_t x0, uint8_t y0, uint8_t w, uint8_t h, uint8_t radius, uint16_t color);
 void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data);
+void enterSleep (void);
+void exitSleep (void);
+void display_ColorBars(uint8_t height, uint8_t width);
 # 7 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c" 2
 # 17 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
 uint8_t
@@ -28733,7 +28736,7 @@ void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners
         px = x;
     }
 }
-# 703 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
+# 705 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
 void display_drawRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r, uint16_t color) {
     uint8_t max_radius = ((w < h) ? w : h) / 2;
     if(r > max_radius) r = max_radius;
@@ -28748,7 +28751,7 @@ void display_drawRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r
     display_drawCircleHelper(x+w-r-1, y+h-r-1, r, 4, color);
     display_drawCircleHelper(x+r , y+h-r-1, r, 8, color);
 }
-# 728 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
+# 730 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
 void display_fillRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r, uint16_t color) {
     uint8_t max_radius = ((w < h) ? w : h) / 2;
     if(r > max_radius) r = max_radius;
@@ -28758,7 +28761,7 @@ void display_fillRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r
 
     display_fillCircleHelper(x+r , y+r, r, 2, h-2*r-1, color);
 }
-# 745 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
+# 747 "C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c"
 void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data)
 {
  if ((x >= _width) || (y >= _height))
@@ -28771,4 +28774,69 @@ void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_
  setAddrWindow(x, y, x + w - 1, y + h - 1);
  SPI1_ExchangeBlock((uint8_t *)data, sizeof(uint16_t) * w * h);
 
+}
+
+void enterSleep (void)
+{
+ writeCommand(0x28);
+ _delay((unsigned long)((20)*(64000000/4000.0)));
+ writeCommand(0x10);
+}
+
+void exitSleep (void)
+{
+ writeCommand(0x11);
+ _delay((unsigned long)((120)*(64000000/4000.0)));
+ writeCommand(0x29);
+
+
+
+
+}
+
+void display_ColorBars(uint8_t height, uint8_t width)
+{
+  uint8_t barHeight = height / 8;
+ uint8_t i,j;
+
+   setAddrWindow(0, 0, width-1, height-1);
+
+ for(i=0;i<height;i++)
+ {
+  for(j=0;j<width;j++)
+  {
+   if(i>(barHeight * 7))
+   {
+    pushColor(0x0000);
+   }
+   else if(i>(barHeight * 6))
+   {
+    pushColor(0x001F);
+   }
+   else if(i>(barHeight * 5))
+   {
+    pushColor(0x07E0);
+   }
+   else if(i>(barHeight * 4))
+   {
+    pushColor(0x7FFF);
+   }
+   else if(i>(barHeight * 3))
+   {
+    pushColor(0xF800);
+   }
+   else if(i>(barHeight * 2))
+   {
+    pushColor(0xF81F);
+   }
+   else if(i>(barHeight * 1))
+   {
+    pushColor(0xFFE0);
+   }
+   else
+   {
+    pushColor(0xFFFF);
+   }
+  }
+ }
 }

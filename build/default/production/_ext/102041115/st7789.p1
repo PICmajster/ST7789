@@ -4072,8 +4072,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 691: }
 [e :UE 2430 ]
 }
-"703
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 703: void display_drawRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r, uint16_t color) {
+"705
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 705: void display_drawRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r, uint16_t color) {
 [v _display_drawRoundRect `(v ~T0 @X0 1 ef6`uc`uc`uc`uc`uc`us ]
 {
 [e :U _display_drawRoundRect ]
@@ -4084,45 +4084,45 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _r `uc ~T0 @X0 1 r5 ]
 [v _color `us ~T0 @X0 1 r6 ]
 [f ]
-"704
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 704:     uint8_t max_radius = ((w < h) ? w : h) / 2;
+"706
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 706:     uint8_t max_radius = ((w < h) ? w : h) / 2;
 [v _max_radius `uc ~T0 @X0 1 a ]
 [e = _max_radius -> / ? < -> _w `i -> _h `i : -> _w `i -> _h `i -> 2 `i `uc ]
-"705
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 705:     if(r > max_radius) r = max_radius;
+"707
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 707:     if(r > max_radius) r = max_radius;
 [e $ ! > -> _r `i -> _max_radius `i 2442  ]
 [e = _r _max_radius ]
 [e :U 2442 ]
-"707
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 707:     drawHLine(x+r , y , w-2*r, color);
-[e ( _drawHLine (4 , , , -> + -> _x `i -> _r `i `uc _y -> - -> _w `i * -> 2 `i -> _r `i `uc _color ]
-"708
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 708:     drawHLine(x+r , y+h-1, w-2*r, color);
-[e ( _drawHLine (4 , , , -> + -> _x `i -> _r `i `uc -> - + -> _y `i -> _h `i -> 1 `i `uc -> - -> _w `i * -> 2 `i -> _r `i `uc _color ]
 "709
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 709:     drawVLine(x , y+r , h-2*r, color);
-[e ( _drawVLine (4 , , , _x -> + -> _y `i -> _r `i `uc -> - -> _h `i * -> 2 `i -> _r `i `uc _color ]
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 709:     drawHLine(x+r , y , w-2*r, color);
+[e ( _drawHLine (4 , , , -> + -> _x `i -> _r `i `uc _y -> - -> _w `i * -> 2 `i -> _r `i `uc _color ]
 "710
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 710:     drawVLine(x+w-1, y+r , h-2*r, color);
-[e ( _drawVLine (4 , , , -> - + -> _x `i -> _w `i -> 1 `i `uc -> + -> _y `i -> _r `i `uc -> - -> _h `i * -> 2 `i -> _r `i `uc _color ]
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 710:     drawHLine(x+r , y+h-1, w-2*r, color);
+[e ( _drawHLine (4 , , , -> + -> _x `i -> _r `i `uc -> - + -> _y `i -> _h `i -> 1 `i `uc -> - -> _w `i * -> 2 `i -> _r `i `uc _color ]
+"711
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 711:     drawVLine(x , y+r , h-2*r, color);
+[e ( _drawVLine (4 , , , _x -> + -> _y `i -> _r `i `uc -> - -> _h `i * -> 2 `i -> _r `i `uc _color ]
 "712
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 712:     display_drawCircleHelper(x+r , y+r , r, 1, color);
-[e ( _display_drawCircleHelper (4 , , , , -> + -> _x `i -> _r `i `uc -> + -> _y `i -> _r `i `uc _r -> -> 1 `i `uc _color ]
-"713
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 713:     display_drawCircleHelper(x+w-r-1, y+r , r, 2, color);
-[e ( _display_drawCircleHelper (4 , , , , -> - - + -> _x `i -> _w `i -> _r `i -> 1 `i `uc -> + -> _y `i -> _r `i `uc _r -> -> 2 `i `uc _color ]
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 712:     drawVLine(x+w-1, y+r , h-2*r, color);
+[e ( _drawVLine (4 , , , -> - + -> _x `i -> _w `i -> 1 `i `uc -> + -> _y `i -> _r `i `uc -> - -> _h `i * -> 2 `i -> _r `i `uc _color ]
 "714
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 714:     display_drawCircleHelper(x+w-r-1, y+h-r-1, r, 4, color);
-[e ( _display_drawCircleHelper (4 , , , , -> - - + -> _x `i -> _w `i -> _r `i -> 1 `i `uc -> - - + -> _y `i -> _h `i -> _r `i -> 1 `i `uc _r -> -> 4 `i `uc _color ]
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 714:     display_drawCircleHelper(x+r , y+r , r, 1, color);
+[e ( _display_drawCircleHelper (4 , , , , -> + -> _x `i -> _r `i `uc -> + -> _y `i -> _r `i `uc _r -> -> 1 `i `uc _color ]
 "715
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 715:     display_drawCircleHelper(x+r , y+h-r-1, r, 8, color);
-[e ( _display_drawCircleHelper (4 , , , , -> + -> _x `i -> _r `i `uc -> - - + -> _y `i -> _h `i -> _r `i -> 1 `i `uc _r -> -> 8 `i `uc _color ]
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 715:     display_drawCircleHelper(x+w-r-1, y+r , r, 2, color);
+[e ( _display_drawCircleHelper (4 , , , , -> - - + -> _x `i -> _w `i -> _r `i -> 1 `i `uc -> + -> _y `i -> _r `i `uc _r -> -> 2 `i `uc _color ]
 "716
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 716: }
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 716:     display_drawCircleHelper(x+w-r-1, y+h-r-1, r, 4, color);
+[e ( _display_drawCircleHelper (4 , , , , -> - - + -> _x `i -> _w `i -> _r `i -> 1 `i `uc -> - - + -> _y `i -> _h `i -> _r `i -> 1 `i `uc _r -> -> 4 `i `uc _color ]
+"717
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 717:     display_drawCircleHelper(x+r , y+h-r-1, r, 8, color);
+[e ( _display_drawCircleHelper (4 , , , , -> + -> _x `i -> _r `i `uc -> - - + -> _y `i -> _h `i -> _r `i -> 1 `i `uc _r -> -> 8 `i `uc _color ]
+"718
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 718: }
 [e :UE 2441 ]
 }
-"728
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 728: void display_fillRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r, uint16_t color) {
+"730
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 730: void display_fillRoundRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint8_t r, uint16_t color) {
 [v _display_fillRoundRect `(v ~T0 @X0 1 ef6`uc`uc`uc`uc`uc`us ]
 {
 [e :U _display_fillRoundRect ]
@@ -4133,73 +4133,294 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _r `uc ~T0 @X0 1 r5 ]
 [v _color `us ~T0 @X0 1 r6 ]
 [f ]
-"729
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 729:     uint8_t max_radius = ((w < h) ? w : h) / 2;
+"731
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 731:     uint8_t max_radius = ((w < h) ? w : h) / 2;
 [v _max_radius `uc ~T0 @X0 1 a ]
 [e = _max_radius -> / ? < -> _w `i -> _h `i : -> _w `i -> _h `i -> 2 `i `uc ]
-"730
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 730:     if(r > max_radius) r = max_radius;
+"732
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 732:     if(r > max_radius) r = max_radius;
 [e $ ! > -> _r `i -> _max_radius `i 2444  ]
 [e = _r _max_radius ]
 [e :U 2444 ]
-"731
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 731:     fillRect(x+r, y, w-2*r, h, color);
-[e ( _fillRect (4 , , , , -> + -> _x `i -> _r `i `uc _y -> - -> _w `i * -> 2 `i -> _r `i `uc _h _color ]
 "733
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 733:     display_fillCircleHelper(x+w-r-1, y+r, r, 1, h-2*r-1, color);
-[e ( _display_fillCircleHelper (4 , , , , , -> - - + -> _x `i -> _w `i -> _r `i -> 1 `i `uc -> + -> _y `i -> _r `i `uc _r -> -> 1 `i `uc -> - - -> _h `i * -> 2 `i -> _r `i -> 1 `i `uc _color ]
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 733:     fillRect(x+r, y, w-2*r, h, color);
+[e ( _fillRect (4 , , , , -> + -> _x `i -> _r `i `uc _y -> - -> _w `i * -> 2 `i -> _r `i `uc _h _color ]
 "735
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 735:     display_fillCircleHelper(x+r , y+r, r, 2, h-2*r-1, color);
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 735:     display_fillCircleHelper(x+w-r-1, y+r, r, 1, h-2*r-1, color);
+[e ( _display_fillCircleHelper (4 , , , , , -> - - + -> _x `i -> _w `i -> _r `i -> 1 `i `uc -> + -> _y `i -> _r `i `uc _r -> -> 1 `i `uc -> - - -> _h `i * -> 2 `i -> _r `i -> 1 `i `uc _color ]
+"737
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 737:     display_fillCircleHelper(x+r , y+r, r, 2, h-2*r-1, color);
 [e ( _display_fillCircleHelper (4 , , , , , -> + -> _x `i -> _r `i `uc -> + -> _y `i -> _r `i `uc _r -> -> 2 `i `uc -> - - -> _h `i * -> 2 `i -> _r `i -> 1 `i `uc _color ]
-"736
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 736: }
+"738
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 738: }
 [e :UE 2443 ]
 }
-"745
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 745: void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data)
+"747
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 747: void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data)
 [v _display_DrawImage `(v ~T0 @X0 1 ef5`uc`uc`uc`uc`*Cus ]
-"746
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 746: {
+"748
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 748: {
 {
 [e :U _display_DrawImage ]
-"745
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 745: void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data)
+"747
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 747: void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data)
 [v _x `uc ~T0 @X0 1 r1 ]
 [v _y `uc ~T0 @X0 1 r2 ]
 [v _w `uc ~T0 @X0 1 r3 ]
 [v _h `uc ~T0 @X0 1 r4 ]
 [v _data `*Cus ~T0 @X0 1 r5 ]
-"746
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 746: {
-[f ]
-"747
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 747:  if ((x >= _width) || (y >= _height))
-[e $ ! || >= -> _x `i -> __width `i >= -> _y `i -> __height `i 2446  ]
 "748
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 748:   return;
-[e $UE 2445  ]
-[e :U 2446 ]
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 748: {
+[f ]
 "749
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 749:  if ((x + w - 1) >= _width)
-[e $ ! >= - + -> _x `i -> _w `i -> 1 `i -> __width `i 2447  ]
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 749:  if ((x >= _width) || (y >= _height))
+[e $ ! || >= -> _x `i -> __width `i >= -> _y `i -> __height `i 2446  ]
 "750
 [; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 750:   return;
 [e $UE 2445  ]
-[e :U 2447 ]
+[e :U 2446 ]
 "751
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 751:  if ((y + h - 1) >= _height)
-[e $ ! >= - + -> _y `i -> _h `i -> 1 `i -> __height `i 2448  ]
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 751:  if ((x + w - 1) >= _width)
+[e $ ! >= - + -> _x `i -> _w `i -> 1 `i -> __width `i 2447  ]
 "752
 [; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 752:   return;
 [e $UE 2445  ]
-[e :U 2448 ]
+[e :U 2447 ]
+"753
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 753:  if ((y + h - 1) >= _height)
+[e $ ! >= - + -> _y `i -> _h `i -> 1 `i -> __height `i 2448  ]
 "754
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 754:  setAddrWindow(x, y, x + w - 1, y + h - 1);
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 754:   return;
+[e $UE 2445  ]
+[e :U 2448 ]
+"756
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 756:  setAddrWindow(x, y, x + w - 1, y + h - 1);
 [e ( _setAddrWindow (4 , , , _x _y -> - + -> _x `i -> _w `i -> 1 `i `uc -> - + -> _y `i -> _h `i -> 1 `i `uc ]
-"755
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 755:  SPI1_ExchangeBlock((uint8_t *)data, sizeof(uint16_t) * w * h);
-[e ( _SPI1_ExchangeBlock (2 , -> -> _data `*uc `*v * * -> # `us `ui -> _w `ui -> _h `ui ]
 "757
-[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 757: }
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 757:  SPI1_ExchangeBlock((uint8_t *)data, sizeof(uint16_t) * w * h);
+[e ( _SPI1_ExchangeBlock (2 , -> -> _data `*uc `*v * * -> # `us `ui -> _w `ui -> _h `ui ]
+"759
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 759: }
 [e :UE 2445 ]
+}
+"761
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 761: void enterSleep (void)
+[v _enterSleep `(v ~T0 @X0 1 ef ]
+"762
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 762: {
+{
+[e :U _enterSleep ]
+[f ]
+"763
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 763:  writeCommand(0x28);
+[e ( _writeCommand (1 -> -> 40 `i `uc ]
+"764
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 764:  _delay((unsigned long)((20)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"765
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 765:  writeCommand(0x10);
+[e ( _writeCommand (1 -> -> 16 `i `uc ]
+"766
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 766: }
+[e :UE 2449 ]
+}
+"768
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 768: void exitSleep (void)
+[v _exitSleep `(v ~T0 @X0 1 ef ]
+"769
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 769: {
+{
+[e :U _exitSleep ]
+[f ]
+"770
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 770:  writeCommand(0x11);
+[e ( _writeCommand (1 -> -> 17 `i `uc ]
+"771
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 771:  _delay((unsigned long)((120)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 120 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"772
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 772:  writeCommand(0x29);
+[e ( _writeCommand (1 -> -> 41 `i `uc ]
+"777
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 777: }
+[e :UE 2450 ]
+}
+"779
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 779: void display_ColorBars(uint8_t height, uint8_t width)
+[v _display_ColorBars `(v ~T0 @X0 1 ef2`uc`uc ]
+"780
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 780: {
+{
+[e :U _display_ColorBars ]
+"779
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 779: void display_ColorBars(uint8_t height, uint8_t width)
+[v _height `uc ~T0 @X0 1 r1 ]
+[v _width `uc ~T0 @X0 1 r2 ]
+"780
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 780: {
+[f ]
+"781
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 781:   uint8_t barHeight = height / 8;
+[v _barHeight `uc ~T0 @X0 1 a ]
+[e = _barHeight -> / -> _height `i -> 8 `i `uc ]
+"782
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 782:  uint8_t i,j;
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+"784
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 784:    setAddrWindow(0, 0, width-1, height-1);
+[e ( _setAddrWindow (4 , , , -> -> 0 `i `uc -> -> 0 `i `uc -> - -> _width `i -> 1 `i `uc -> - -> _height `i -> 1 `i `uc ]
+"786
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 786:  for(i=0;i<height;i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 2455  ]
+[e :U 2452 ]
+"787
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 787:  {
+{
+"788
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 788:   for(j=0;j<width;j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $U 2459  ]
+[e :U 2456 ]
+"789
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 789:   {
+{
+"790
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 790:    if(i>(barHeight * 7))
+[e $ ! > -> _i `i * -> _barHeight `i -> 7 `i 2460  ]
+"791
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 791:    {
+{
+"792
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 792:     pushColor(0x0000);
+[e ( _pushColor (1 -> -> 0 `i `us ]
+"793
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 793:    }
+}
+[e $U 2461  ]
+"794
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 794:    else if(i>(barHeight * 6))
+[e :U 2460 ]
+[e $ ! > -> _i `i * -> _barHeight `i -> 6 `i 2462  ]
+"795
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 795:    {
+{
+"796
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 796:     pushColor(0x001F);
+[e ( _pushColor (1 -> -> 31 `i `us ]
+"797
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 797:    }
+}
+[e $U 2463  ]
+"798
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 798:    else if(i>(barHeight * 5))
+[e :U 2462 ]
+[e $ ! > -> _i `i * -> _barHeight `i -> 5 `i 2464  ]
+"799
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 799:    {
+{
+"800
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 800:     pushColor(0x07E0);
+[e ( _pushColor (1 -> -> 2016 `i `us ]
+"801
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 801:    }
+}
+[e $U 2465  ]
+"802
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 802:    else if(i>(barHeight * 4))
+[e :U 2464 ]
+[e $ ! > -> _i `i * -> _barHeight `i -> 4 `i 2466  ]
+"803
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 803:    {
+{
+"804
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 804:     pushColor(0x7FFF);
+[e ( _pushColor (1 -> -> 32767 `i `us ]
+"805
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 805:    }
+}
+[e $U 2467  ]
+"806
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 806:    else if(i>(barHeight * 3))
+[e :U 2466 ]
+[e $ ! > -> _i `i * -> _barHeight `i -> 3 `i 2468  ]
+"807
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 807:    {
+{
+"808
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 808:     pushColor(0xF800);
+[e ( _pushColor (1 -> -> 63488 `ui `us ]
+"809
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 809:    }
+}
+[e $U 2469  ]
+"810
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 810:    else if(i>(barHeight * 2))
+[e :U 2468 ]
+[e $ ! > -> _i `i * -> _barHeight `i -> 2 `i 2470  ]
+"811
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 811:    {
+{
+"812
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 812:     pushColor(0xF81F);
+[e ( _pushColor (1 -> -> 63519 `ui `us ]
+"813
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 813:    }
+}
+[e $U 2471  ]
+"814
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 814:    else if(i>(barHeight * 1))
+[e :U 2470 ]
+[e $ ! > -> _i `i * -> _barHeight `i -> 1 `i 2472  ]
+"815
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 815:    {
+{
+"816
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 816:     pushColor(0xFFE0);
+[e ( _pushColor (1 -> -> 65504 `ui `us ]
+"817
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 817:    }
+}
+[e $U 2473  ]
+"818
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 818:    else
+[e :U 2472 ]
+"819
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 819:    {
+{
+"820
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 820:     pushColor(0xFFFF);
+[e ( _pushColor (1 -> -> 65535 `ui `us ]
+"821
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 821:    }
+}
+[e :U 2473 ]
+[e :U 2471 ]
+[e :U 2469 ]
+[e :U 2467 ]
+[e :U 2465 ]
+[e :U 2463 ]
+[e :U 2461 ]
+"822
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 822:   }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e :U 2459 ]
+[e $ < -> _j `i -> _width `i 2456  ]
+[e :U 2457 ]
+}
+"823
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 823:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 2455 ]
+[e $ < -> _i `i -> _height `i 2452  ]
+[e :U 2453 ]
+}
+"824
+[; ;C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c: 824: }
+[e :UE 2451 ]
 }

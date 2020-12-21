@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\pic18f47q43_ST7789.X.production.sym \
   --cmf=dist/default/production\pic18f47q43_ST7789.X.production.cmf -z \
-  -Q18F47Q43 -oC:\Users\wojte\AppData\Local\Temp\savk.2 \
+  -Q18F47Q43 -oC:\Users\wojte\AppData\Local\Temp\s1ik.3 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/pic18f47q43_ST7789.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0560h-025FFh -pstack=STACK \
@@ -32,7 +32,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\wojte\AppData\Local\Temp\savk.o \
+  C:\Users\wojte\AppData\Local\Temp\s1ik.o \
   dist/default/production\pic18f47q43_ST7789.X.production.o 
 
 Object code version is 3.11
@@ -42,7 +42,7 @@ Machine type is 18F47Q43
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\wojte\AppData\Local\Temp\savk.o
+C:\Users\wojte\AppData\Local\Temp\s1ik.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 init                              1FFFC    1FFFC        4     FFFE       0
@@ -714,7 +714,7 @@ intlevel0                         text         000000
 intlevel1                         text         000000
 intlevel2                         text         000000
 intlevel3                         text         000000
-main@F16751                       dataCOMRAM   000531
+main@F16756                       dataCOMRAM   000531
 main@MyString                     cstackCOMRAM 000525
 setAddrWindow@h                   cstackCOMRAM 000505
 setAddrWindow@w                   cstackCOMRAM 000504
@@ -1210,6 +1210,7 @@ Total ram usage:        5 bytes
 		_fillRect
 		_drawHLine
 		_display_DrawImage
+		_display_ColorBars
  This function uses a non-reentrant model
 
 
@@ -1243,6 +1244,8 @@ Total ram usage:        1 bytes
 		_setAddrWindow
 		_setRotation
 		_invertDisplay
+		_enterSleep
+		_exitSleep
  This function uses a non-reentrant model
 
 

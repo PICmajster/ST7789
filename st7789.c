@@ -690,6 +690,8 @@ void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners
     }
 }
 
+
+
 /*!
    @brief   Draw a rounded rectangle with no fill color
     @param    x   Top left corner x coordinate
@@ -754,4 +756,69 @@ void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_
 	setAddrWindow(x, y, x + w - 1, y + h - 1);
 	SPI1_ExchangeBlock((uint8_t *)data, sizeof(uint16_t) * w * h);
 	
+}
+
+void enterSleep (void)
+{
+	writeCommand(ST77XX_DISPOFF);	// Display Off
+	__delay_ms(20);
+	writeCommand(ST77XX_SLPIN);	// Sleep In (Low power mode)
+}
+//*********************************************************
+void exitSleep (void)
+{
+	writeCommand(ST77XX_SLPOUT); // Exit Sleep Mode
+	__delay_ms(120);
+	writeCommand(ST77XX_DISPON); // Display on
+
+	//writeCommand(ST77XX_RAMWR); // Memory write
+	// When this command is accepted, the column register and the page
+	// register are reset to the start column/start page positions.
+}
+
+void display_ColorBars(uint8_t height, uint8_t width)
+{
+  uint8_t barHeight = height / 8; // 240 / 8 = 30
+	uint8_t i,j;
+
+   setAddrWindow(0, 0, width-1, height-1);
+
+	for(i=0;i<height;i++)
+	{
+		for(j=0;j<width;j++)
+		{
+			if(i>(barHeight * 7))       // > 210
+			{
+				pushColor(BLACK);
+			}
+			else if(i>(barHeight * 6))  // > 180
+			{
+				pushColor(BLUE);
+			}
+			else if(i>(barHeight * 5))  // > 150
+			{
+				pushColor(GREEN);
+			}
+			else if(i>(barHeight * 4))  // > 120
+			{
+				pushColor(CYAN);
+			}
+			else if(i>(barHeight * 3))  // > 90
+			{
+				pushColor(RED);
+			}
+			else if(i>(barHeight * 2))  // > 60
+			{
+				pushColor(MAGENTA);
+			}
+			else if(i>(barHeight * 1))  // > 30
+			{
+				pushColor(YELLOW);
+			}
+			else                        // > 0
+			{
+				pushColor(WHITE);
+			}
+		}
+	}
 }

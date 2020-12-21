@@ -28190,6 +28190,9 @@ void display_fillCircleHelper(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners
 void display_drawRoundRect(uint8_t x0, uint8_t y0, uint8_t w, uint8_t h, uint8_t radius, uint16_t color);
 void display_fillRoundRect(uint8_t x0, uint8_t y0, uint8_t w, uint8_t h, uint8_t radius, uint16_t color);
 void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_t *data);
+void enterSleep (void);
+void exitSleep (void);
+void display_ColorBars(uint8_t height, uint8_t width);
 # 3 "main.c" 2
 
 

@@ -139,7 +139,6 @@ __HnvFARRAM 0 0 FARRAM 0
 __LnvFARRAM 0 0 FARRAM 0
 __end_of_setAddrWindow 1093A 0 CODE 0
 __end_of_display_putc 102DC 0 CODE 0
-main@F16751 531 0 COMRAM 1
 __end_of_display_puts 109B8 0 CODE 0
 _SPI1_Open 1052C 0 CODE 0
 __end_of_font FFD7 0 MEDIUMCONST 0
@@ -169,6 +168,7 @@ end_of_initialization 109E4 0 CODE 0
 drawPixel@color 509 0 COMRAM 1
 _display_putc 10000 0 CODE 0
 _OSCCON1 AD 0 ABS 0
+main@F16756 531 0 COMRAM 1
 _OSCCON3 AF 0 ABS 0
 setAddrWindow@w 504 0 COMRAM 1
 drawVLine@x 515 0 COMRAM 1
@@ -468,7 +468,7 @@ text9 10000 10AFB CODE 10000 0
 %locals
 dist/default/production\pic18f47q43_ST7789.X.production.o
 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f47q43.h
-C:\Users\wojte\AppData\Local\Temp\savk.s
+C:\Users\wojte\AppData\Local\Temp\s1ik.s
 10070 109B8 0 CODE 0
 10072 109B8 0 CODE 0
 10075 109B8 0 CODE 0

@@ -2558,8 +2558,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "21
 [; ;main.c: 21:     tft_init();
 [e ( _tft_init ..  ]
-[v F16751 `uc ~T0 @X0 -> 12 `i s ]
-[i F16751
+[v F16756 `uc ~T0 @X0 -> 12 `i s ]
+[i F16756
 :U ..
 "23
 [; ;main.c: 23:     uint8_t MyString[] = {"Ala ma Kota"};
@@ -2578,7 +2578,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _MyString `uc ~T0 @X0 -> 12 `i a ]
-[e = _MyString F16751 ]
+[e = _MyString F16756 ]
 "24
 [; ;main.c: 24:     fillScreen(0x07E0);
 [e ( _fillScreen (1 -> -> 2016 `i `us ]

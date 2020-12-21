@@ -42,7 +42,7 @@ dataCOMRAM COMRAM 1 531 531 12 1
 bssCOMRAM COMRAM 1 543 543 9 1
 mediumconst MEDIUMCONST 0 FAD6 FAD6 52A 1
 config CONFIG 4 300000 300000 A 1
-$C:\Users\wojte\AppData\Local\Temp\savk.o
+$C:\Users\wojte\AppData\Local\Temp\s1ik.o
 idloc IDLOC 5 200000 200000 20 1
 init CODE 0 1FFFC 1FFFC 4 1
 reset_vec CODE 0 0 0 4 1
@@ -376,32 +376,32 @@ $dist/default/production\pic18f47q43_ST7789.X.production.o
 1085A text0 CODE >28:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
 10866 text0 CODE >30:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
 10866 text0 CODE >38:C:\Users\wojte\MPLABXProjects\pic18f47q43_ST7789.X\main.c
-109B8 cinit CODE >10070:C:\Users\wojte\AppData\Local\Temp\savk.s
-109B8 cinit CODE >10072:C:\Users\wojte\AppData\Local\Temp\savk.s
-109B8 cinit CODE >10075:C:\Users\wojte\AppData\Local\Temp\savk.s
-109B8 cinit CODE >10143:C:\Users\wojte\AppData\Local\Temp\savk.s
-109BA cinit CODE >10144:C:\Users\wojte\AppData\Local\Temp\savk.s
-109BC cinit CODE >10145:C:\Users\wojte\AppData\Local\Temp\savk.s
-109BE cinit CODE >10146:C:\Users\wojte\AppData\Local\Temp\savk.s
-109C0 cinit CODE >10147:C:\Users\wojte\AppData\Local\Temp\savk.s
-109C2 cinit CODE >10148:C:\Users\wojte\AppData\Local\Temp\savk.s
-109C4 cinit CODE >10149:C:\Users\wojte\AppData\Local\Temp\savk.s
-109C8 cinit CODE >10150:C:\Users\wojte\AppData\Local\Temp\savk.s
-109CC cinit CODE >10151:C:\Users\wojte\AppData\Local\Temp\savk.s
-109CC cinit CODE >10152:C:\Users\wojte\AppData\Local\Temp\savk.s
-109CE cinit CODE >10153:C:\Users\wojte\AppData\Local\Temp\savk.s
-109D2 cinit CODE >10154:C:\Users\wojte\AppData\Local\Temp\savk.s
-109D4 cinit CODE >10155:C:\Users\wojte\AppData\Local\Temp\savk.s
-109D6 cinit CODE >10156:C:\Users\wojte\AppData\Local\Temp\savk.s
-109D8 cinit CODE >10160:C:\Users\wojte\AppData\Local\Temp\savk.s
-109DC cinit CODE >10161:C:\Users\wojte\AppData\Local\Temp\savk.s
-109DE cinit CODE >10162:C:\Users\wojte\AppData\Local\Temp\savk.s
-109DE cinit CODE >10163:C:\Users\wojte\AppData\Local\Temp\savk.s
-109E0 cinit CODE >10164:C:\Users\wojte\AppData\Local\Temp\savk.s
-109E2 cinit CODE >10165:C:\Users\wojte\AppData\Local\Temp\savk.s
-109E4 cinit CODE >10171:C:\Users\wojte\AppData\Local\Temp\savk.s
-109E4 cinit CODE >10173:C:\Users\wojte\AppData\Local\Temp\savk.s
-109E6 cinit CODE >10174:C:\Users\wojte\AppData\Local\Temp\savk.s
+109B8 cinit CODE >10070:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109B8 cinit CODE >10072:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109B8 cinit CODE >10075:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109B8 cinit CODE >10143:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109BA cinit CODE >10144:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109BC cinit CODE >10145:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109BE cinit CODE >10146:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109C0 cinit CODE >10147:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109C2 cinit CODE >10148:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109C4 cinit CODE >10149:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109C8 cinit CODE >10150:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109CC cinit CODE >10151:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109CC cinit CODE >10152:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109CE cinit CODE >10153:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109D2 cinit CODE >10154:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109D4 cinit CODE >10155:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109D6 cinit CODE >10156:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109D8 cinit CODE >10160:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109DC cinit CODE >10161:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109DE cinit CODE >10162:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109DE cinit CODE >10163:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109E0 cinit CODE >10164:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109E2 cinit CODE >10165:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109E4 cinit CODE >10171:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109E4 cinit CODE >10173:C:\Users\wojte\AppData\Local\Temp\s1ik.s
+109E6 cinit CODE >10174:C:\Users\wojte\AppData\Local\Temp\s1ik.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -426,7 +426,7 @@ __Hspace_4 60000A 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.product
 __size_of_displayInit 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 __end_of_writeCommand 10AF0 0 CODE 0 text14 dist/default/production\pic18f47q43_ST7789.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\pic18f47q43_ST7789.X.production.o
-__mediumconst FAD6 0 MEDIUMCONST 0 mediumconst C:\Users\wojte\AppData\Local\Temp\savk.o
+__mediumconst FAD6 0 MEDIUMCONST 0 mediumconst C:\Users\wojte\AppData\Local\Temp\s1ik.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\pic18f47q43_ST7789.X.production.o
 displayInit@numArgs 507 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 _PMD_Initialize 10A14 0 CODE 0 text18 dist/default/production\pic18f47q43_ST7789.X.production.o
@@ -449,11 +449,11 @@ _WPUB 409 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 _WPUC 411 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 _WPUD 419 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 _WPUE 421 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\wojte\AppData\Local\Temp\savk.o
+___sp 0 0 STACK 2 stack C:\Users\wojte\AppData\Local\Temp\s1ik.o
 _font FAD7 0 MEDIUMCONST 0 mediumconst dist/default/production\pic18f47q43_ST7789.X.production.o
 _main 107FA 0 CODE 0 text0 dist/default/production\pic18f47q43_ST7789.X.production.o
 _wrap 541 0 COMRAM 1 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
-start 1FFFC 0 CODE 0 init C:\Users\wojte\AppData\Local\Temp\savk.o
+start 1FFFC 0 CODE 0 init C:\Users\wojte\AppData\Local\Temp\s1ik.o
 __end_of_setTextColor 10AD0 0 CODE 0 text5 dist/default/production\pic18f47q43_ST7789.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
@@ -465,11 +465,11 @@ __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.
 fillRect@hi 516 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 fillRect@lo 517 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 fillRect@px 514 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
-__accesstop 560 0 ABS 0 - C:\Users\wojte\AppData\Local\Temp\savk.o
-intlevel0 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\savk.o
-intlevel1 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\savk.o
-intlevel2 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\savk.o
-intlevel3 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\savk.o
+__accesstop 560 0 ABS 0 - C:\Users\wojte\AppData\Local\Temp\s1ik.o
+intlevel0 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\s1ik.o
+intlevel1 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\s1ik.o
+intlevel2 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\s1ik.o
+intlevel3 0 0 CODE 0 text C:\Users\wojte\AppData\Local\Temp\s1ik.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 fillScreen@color 519 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
@@ -491,8 +491,8 @@ _ANSELB 408 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 _ANSELC 410 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 _ANSELD 418 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 _ANSELE 420 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\wojte\AppData\Local\Temp\savk.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\wojte\AppData\Local\Temp\savk.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\wojte\AppData\Local\Temp\s1ik.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\wojte\AppData\Local\Temp\s1ik.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 display_putc@c 51F 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 display_putc@i 521 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
@@ -594,8 +594,8 @@ __Hbank36 0 0 ABS 0 bank36 dist/default/production\pic18f47q43_ST7789.X.producti
 __Hbank37 0 0 ABS 0 bank37 dist/default/production\pic18f47q43_ST7789.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\pic18f47q43_ST7789.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\pic18f47q43_ST7789.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\wojte\AppData\Local\Temp\savk.o
-main@F16751 531 0 COMRAM 1 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\wojte\AppData\Local\Temp\s1ik.o
+main@F16756 531 0 COMRAM 1 dataCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\pic18f47q43_ST7789.X.production.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/production\pic18f47q43_ST7789.X.production.o
 __Lbank5 0 0 ABS 0 bank5 dist/default/production\pic18f47q43_ST7789.X.production.o
@@ -749,8 +749,8 @@ _SPI1_ExchangeByte 10A38 0 CODE 0 text15 dist/default/production\pic18f47q43_ST7
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\pic18f47q43_ST7789.X.production.o
 setRotation@madctl 506 0 COMRAM 1 cstackCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 __end_of_SPI1_Open 10602 0 CODE 0 text21 dist/default/production\pic18f47q43_ST7789.X.production.o
-stackhi 25FF 0 ABS 0 - C:\Users\wojte\AppData\Local\Temp\savk.o
-stacklo 560 0 ABS 0 - C:\Users\wojte\AppData\Local\Temp\savk.o
+stackhi 25FF 0 ABS 0 - C:\Users\wojte\AppData\Local\Temp\s1ik.o
+stacklo 560 0 ABS 0 - C:\Users\wojte\AppData\Local\Temp\s1ik.o
 __size_of_SPI1_Open 0 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 _OSCCON1 AD 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
 _OSCCON3 AF 0 ABS 0 - dist/default/production\pic18f47q43_ST7789.X.production.o
@@ -809,7 +809,7 @@ __Ltext18 0 0 ABS 0 text18 dist/default/production\pic18f47q43_ST7789.X.producti
 __Ltext19 0 0 ABS 0 text19 dist/default/production\pic18f47q43_ST7789.X.production.o
 __Ltext20 0 0 ABS 0 text20 dist/default/production\pic18f47q43_ST7789.X.production.o
 __Ltext21 0 0 ABS 0 text21 dist/default/production\pic18f47q43_ST7789.X.production.o
-__ramtop 2600 0 RAM 0 ramtop C:\Users\wojte\AppData\Local\Temp\savk.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\wojte\AppData\Local\Temp\s1ik.o
 _cursor_x 544 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 _cursor_y 543 0 COMRAM 1 bssCOMRAM dist/default/production\pic18f47q43_ST7789.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\pic18f47q43_ST7789.X.production.o

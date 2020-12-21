@@ -31,6 +31,8 @@ SPI1_DEFAULT 0
 [v _fillRect fillRect `(v  1 e 1 0 ]
 "317
 [v _fillScreen fillScreen `(v  1 e 1 0 ]
+"341
+[v _pushColor pushColor `(v  1 e 1 0 ]
 "370
 [v _display_putc display_putc `(v  1 e 1 0 ]
 "427
@@ -329,7 +331,7 @@ SPI1_DEFAULT 0
 "23
 [v main@MyString MyString `[12]uc  1 a 12 36 ]
 "21
-[v main@F16751 F16751 `[12]uc  1 s 12 F16751 ]
+[v main@F16756 F16756 `[12]uc  1 s 12 F16756 ]
 "39
 } 0
 "138 C:/Users/wojte/MPLABXProjects/pic18f47q43_ST7789.X/st7789.c
