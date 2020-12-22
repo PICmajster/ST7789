@@ -26,6 +26,7 @@ uint8_t
 uint8_t
   cursor_x = 0,          ///< x location to start print()ing text
   cursor_y = 0;          ///< y location to start print()ing text
+ 
 uint16_t 
   textcolor = 0xFFFF,    ///< 16-bit background color for print()
   textbgcolor = 0xFFFF;  ///< 16-bit text color for print()
@@ -822,3 +823,58 @@ void display_ColorBars(uint8_t height, uint8_t width)
 		}
 	}
 }
+
+/*This command defines the Vertical Scrolling Area of the display where:
+top_fix_height: describes the Top Fixed Area,
+bottom_fix_height: describes the Bottom Fixed Area and
+_scroll_direction: is scroll direction (0 for top to bottom and 1 for bottom to top).*/
+void setScrollDefinition(uint8_t top_fix_height, uint8_t bottom_fix_height, bool _scroll_direction){
+  uint8_t scroll_height, _tft_type = 1;
+  
+  scroll_height = 240 - top_fix_height - bottom_fix_height;
+  writeCommand(ST77XX_VSCRDEF);
+  ST7789_SPI_Write(0x00);
+  ST7789_SPI_Write(top_fix_height);
+  ST7789_SPI_Write(0x00);
+  ST7789_SPI_Write(scroll_height);
+  ST7789_SPI_Write(0x00);
+  ST7789_SPI_Write(bottom_fix_height);
+  writeCommand(ST77XX_MADCTL);
+  if(_scroll_direction){
+    if(_tft_type == 0){
+      ST7789_SPI_Write(0xD8);
+    }
+    if(_tft_type == 1){
+      ST7789_SPI_Write(0xD0);
+    }
+    if(_tft_type == 2){
+      ST7789_SPI_Write(0x18);
+    }
+  }
+  else{
+    if(_tft_type == 0){
+      ST7789_SPI_Write(0xC8);
+    }
+    if(_tft_type == 1){
+      ST7789_SPI_Write(0xC0);
+    }
+    if(_tft_type == 2){
+      ST7789_SPI_Write(0x08);
+    }
+  }
+}
+
+/*This command is used together with the last command. These two commands describe the scrolling area and the scrolling mode.*/
+void VerticalScroll(uint8_t _vsp) {
+  writeCommand(ST77XX_VSCRSADD);
+  ST7789_SPI_Write(0x00);
+  ST7789_SPI_Write(_vsp);
+}
+
+/*returns the TFT display to its normal state for example exit from scrolling mode.*/
+void NormalDisplay(void){
+  writeCommand(ST77XX_NORON);
+}
+
+
+
