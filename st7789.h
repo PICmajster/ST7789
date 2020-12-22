@@ -27,8 +27,10 @@
 #define ST77XX_RAMRD      0x2E
 
 #define ST77XX_PTLAR      0x30
+#define ST77XX_VSCRDEF    0x33
 #define ST77XX_COLMOD     0x3A
 #define ST77XX_MADCTL     0x36
+#define ST77XX_VSCRSADD   0x37
 
 #define ST77XX_MADCTL_MY  0x80
 #define ST77XX_MADCTL_MX  0x40
@@ -36,10 +38,26 @@
 #define ST77XX_MADCTL_ML  0x10
 #define ST77XX_MADCTL_RGB 0x00
 
+#define ST77XX_FRMCTR1    0xB1
+#define ST77XX_FRMCTR2    0xB2
+#define ST77XX_FRMCTR3    0xB3
+#define ST77XX_INVCTR     0xB4
+#define ST77XX_PWCTR1     0xC0
+#define ST77XX_PWCTR2     0xC1
+#define ST77XX_PWCTR3     0xC2
+#define ST77XX_PWCTR4     0xC3
+#define ST77XX_PWCTR5     0xC4
+#define ST77XX_VMCTR1     0xC5
+#define ST77XX_GMCTRP1    0xE0
+#define ST77XX_GMCTRN1    0xE1
+
+
+
 #define ST77XX_RDID1      0xDA
 #define ST77XX_RDID2      0xDB
 #define ST77XX_RDID3      0xDC
 #define ST77XX_RDID4      0xDD
+
 
 // Some ready-made 16-bit ('565') color settings:
 #define WHITE 0xFFFF
@@ -100,6 +118,10 @@ void display_DrawImage(uint8_t x, uint8_t y, uint8_t w, uint8_t h, const uint16_
 void enterSleep (void);
 void exitSleep (void);
 void display_ColorBars(uint8_t height, uint8_t width);
+void setScrollDefinition(uint8_t top_fix_height, uint8_t bottom_fix_height, bool _scroll_direction);
+void VerticalScroll(uint8_t _vsp);
+void NormalDisplay(void);
+
 
 #endif	/* ST7789_H */
 
